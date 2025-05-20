@@ -6,8 +6,7 @@ from scipy import stats
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, confusion_matrix
-import joblib
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 # from pandas_profiling import ProfileReport
 
 # load dataset
@@ -34,7 +33,7 @@ print(desc_stats)
 
 # handling missing values
 missing_values = data.isnull().sum()
-data.fillna('Unkwown', inplace=True)
+data.backfill(inplace=True)
 
 # check for duplicates
 duplicates = data.duplicated().sum()
@@ -77,6 +76,7 @@ print(confusion_matrix(y_test, y_pred))
 # create a streamlit application
 st.title('Expresso Churn Prediction')
 st.write('Enter the features values to predict churn:')
+st.write(f'The accuracy of the model is {accuracy_score(y_test, y_pred) * 100:.2f}%. ')
 
 # create input fields for the features
 features = {}

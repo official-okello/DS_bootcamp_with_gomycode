@@ -1,6 +1,8 @@
 # Face Detection using Viola-Jones Algorithm
 # This script uses OpenCV to detect faces from the webcam using the Viola-Jones algorithm.
 
+import os
+os.system("pip install opencv-python-headless")
 import cv2
 import streamlit as st
 

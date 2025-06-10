@@ -1,0 +1,20 @@
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+wordcloud
+tensorflow  # Remove if not using deep learning
+torch       # Remove if not using PyTorch-based models
+xgboost
+lightgbm
+catboost
+joblib
+scipy
+requests
+openpyxl  # For handling Excel files
+altair    # Alternative visualization library
+spacy
+keras

@@ -3,6 +3,7 @@ pandas
 numpy
 scikit-learn
 matplotlib
+tensorflow
 seaborn
 plotly
 tensorflow
@@ -10,3 +11,4 @@ scipy
 requests
 spacy
 keras
+SentenceTransformer

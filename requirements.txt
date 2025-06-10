@@ -6,15 +6,8 @@ matplotlib
 seaborn
 plotly
 wordcloud
-tensorflow  # Remove if not using deep learning
-torch       # Remove if not using PyTorch-based models
-xgboost
-lightgbm
-catboost
-joblib
+tensorflow
 scipy
 requests
-openpyxl  # For handling Excel files
-altair    # Alternative visualization library
 spacy
 keras
